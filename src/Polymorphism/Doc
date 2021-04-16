@@ -1,0 +1,15 @@
+Polymorphism
+Here Poly   = many
+     morphs = forms
+It is a concept by which we can perform a single action in different ways.
+
+# Same name but different argument type is the  concept of overloading .
+# If the child is not satisfied with the implementation of parent implementation then if the child
+class goes for reimplementation then the concept it comes overriding . In the overriding concept everything
+is same of the method I mean same name, same argument .
+
+There Are two types of polymorphism
+1. Compile Time / Static type / Early binding
+   Example : Overloading .
+2. RunTime / Dynamic Type / Late Binding
+   Example : Overriding
