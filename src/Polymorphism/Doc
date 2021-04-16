@@ -1,15 +1,27 @@
-Polymorphism
-Here Poly   = many
+#Polymorphism
+ Here Poly   = many
      morphs = forms
-It is a concept by which we can perform a single action in different ways.
+ It is a concept by which we can perform a single action in different ways.
 
 # Same name but different argument type is the  concept of overloading .
 # If the child is not satisfied with the implementation of parent implementation then if the child
-class goes for reimplementation then the concept it comes overriding . In the overriding concept everything
-is same of the method I mean same name, same argument .
+  class goes for reimplementation base on their requirement then the concept it comes overriding . In the overriding concept everything
+  is same of the method I mean same name, same argument .
 
 There Are two types of polymorphism
-1. Compile Time / Static type / Early binding
+ 1. Compile Time / Static type / Early binding
    Example : Overloading .
-2. RunTime / Dynamic Type / Late Binding
+ 2. RunTime / Dynamic Type / Late Binding
    Example : Overriding
+
+# Upcasting : If the reference variable of Parent class refers to the object of Child class, it is known as upcasting.
+  For example: A a=new B();// Upcasting
+
+# Why Overriding called Runtime polymorphism :
+  P p = new C();
+  p.eat();
+At compile time compile will check the eat() is available in the parent class. if it is not present
+ then compiler will gives a error if it is present then  At run time jvm will check in this child class
+ is overriding the method  or not. if it is Overriding then base on run time object child class method
+ will be called .the Overriding is also called run time polymorphism .
+
