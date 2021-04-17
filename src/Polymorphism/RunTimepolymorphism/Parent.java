@@ -8,4 +8,8 @@ public class Parent {
     public void marry() {
         System.out.println("Marry the Sokhina benu");
     }
+
+    public Object coveriantMethod() {
+        return null;
+    }
 }

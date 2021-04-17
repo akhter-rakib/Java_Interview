@@ -1,0 +1,3 @@
+# Different between instance method , static method
+  Static method is class level no related to object. Instance method is object related method.
+  -- Static is class level matter , Instance is object level matter

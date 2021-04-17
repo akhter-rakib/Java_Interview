@@ -1,12 +1,21 @@
+Method signature : Method signature is method name followed by argument type.
+                   Compile use method signature while method are resolution.
 #Polymorphism
  Here Poly   = many
      morphs = forms
  It is a concept by which we can perform a single action in different ways.
 
+ There Are two types of polymorphism
+  1. Compile Time / Static type / Early binding
+    Example : Overloading .
+  2. RunTime / Dynamic Type / Late Binding
+    Example : Overriding
+
 # OverLoading : Same name but different argument type is the  concept of overloading .
                 In Overloading method resolution (Which method will be execute) always
                 take care by compiler base on reference type that's why method overloading
                 is called also compile time polymorphism.
+                It gives more flexibility to programmer with the same name but different action.
 #AutoMetic promotion in Overloading :
      byte -> short -> int -> long -> float -> double
      char -> -> int -> long -> float -> double
@@ -24,20 +33,51 @@ practical example : 1. AutoPromoteInOverloading class
   class goes for reimplementation base on their requirement then the concept it comes overriding . In the overriding concept everything
   is same of the method I mean same name, same argument .
 
-There Are two types of polymorphism
- 1. Compile Time / Static type / Early binding
-   Example : Overloading .
- 2. RunTime / Dynamic Type / Late Binding
-   Example : Overriding
+ # Why Overriding called Runtime polymorphism :
+   P p = new C();
+   p.eat();
+At compile time compile will check the eat() is available in the parent class. if it is not present
+  then compiler will gives a error if it is present then  At run time jvm will check in this child class
+  is overriding the method  or not. if it is Overriding then base on run time object child class method
+  will be called .the Overriding is also called run time polymorphism .
 
 # Upcasting : If the reference variable of Parent class refers to the object of Child class, it is known as upcasting.
   For example: A a=new B();// Upcasting
 
-# Why Overriding called Runtime polymorphism :
-  P p = new C();
-  p.eat();
-At compile time compile will check the eat() is available in the parent class. if it is not present
- then compiler will gives a error if it is present then  At run time jvm will check in this child class
- is overriding the method  or not. if it is Overriding then base on run time object child class method
- will be called .the Overriding is also called run time polymorphism .
+Rule Of overriding
+1. Method signature(method name , argument type) must be same
+2. return type must be same but it is applicable until 1.4 version but after that co-variant return type allow
+   co-variant - > co-variant type is the type which is child class of parent type
+                  Such as : String is co-variant type of Object Class
+   practical example : CovariantReturnType
+
+#overriding concept not applicable for  private, final method.
+# But in the case of final case
+  if parent method is final so child method can not be overridden
+  if parent method is non-final so child method can be overridden.
+  if p abstract then child can be overridden
+  if p non- abstract to abstract possible .
+  if p native to non native possible
+  if p synchronization to non synchronization
+
+# We can reduce scope of access modifier but we can increase the scope
+  public > protected > default > private
+
+# If child class method throws any checked exception, then compulsory parent class should throw same
+  checked exception or itself parent . In unchecked then no restriction.
+
+# Class / Static level method can not be overriding  and also object level method is not possible in
+  class level .
+  Example : StaticMethodDemo
+
+# But If parent class method is static method and child class same method is marked as static
+  then the concept will be called method over hiding .
+  Example : OverHidingDemo
+
+# How we differentiate method overriding and method hiding .
+  In method overriding jvm call method base on run time object but if it is overloading then method
+  resolution will be held base on reference type object.
+  Example : DemoMethodHiding
+
+
 
