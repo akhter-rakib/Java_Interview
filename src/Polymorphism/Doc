@@ -78,6 +78,12 @@ Rule Of overriding
   In method overriding jvm call method base on run time object but if it is overloading then method
   resolution will be held base on reference type object.
   Example : DemoMethodHiding
+# var-argument : var-argument will not be overriding concept It will overloaded(compiler will
+  execute the reference type method).
+#Overriding with respect to variable :
+  Overriding concept applicable only for method not for variable
+  Variable resolution always takes care by compiler base on reference type.
+
 
 
 
