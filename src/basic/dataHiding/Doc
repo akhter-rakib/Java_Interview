@@ -1,0 +1,2 @@
+Data Hiding : Outside person should access our data directly is called data hiding.
+    Example : We can make it by use private access modifier.
