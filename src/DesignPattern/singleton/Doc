@@ -20,15 +20,35 @@ Example :
 
 Way to Create Single class :
 We must make the constructor private first .
-Approach One : private static className var = new ClassName();
+Approach One (this is guaranteed to be thread safe) : private static className var = new ClassName();
                Under The CLass So that In the Run time It will create a Obj for EveryRequest.
+Runtime class is internally implemented using this way of create singleton class.
+example : SingleTonByRuntimeCreation
+Here we have created instance of singleton in static initializer. JVM executes static initializer
+when the class is loaded and hence this is guaranteed to be thread safe. Use this method only when
+your singleton class is light and is used throughout the execution of your program.
+With synchronized Way :
+// Only one thread can execute this at a time
+    public static synchronized Singleton getInstance()
+    {
+        if (obj==null)
+            obj = new Singleton();
+        return obj;
+    }
+Here using synchronized makes sure that only one thread at a time can execute getInstance().
+The main disadvantage of this is method is that using synchronized every time while creating the
+singleton object is expensive and may decrease the performance of your program. However if performance
+of getInstance() is not critical for your application this method provides a clean and simple solution
+Example : SingleTonByLazyWayWithSynchronized
 
-Approach Two : Private static CLassName var =null;
- When the first request comes then It will create the obj and after that other will reuse this obj
- Runtime class is internally implemented using the first way(Look the exmp : SingleTonCLassWayOne) of create singleton class.
-
+Approach Two : When the first request comes then It will create the obj and after that other will reuse this obj
+              Private static CLassName var =null;
+              example : SingleTonByAfterFirstRequest
 Do you know what is the main Use of private constructor ?:
 > Private constructor main use is to create singleton class.
+
+Approach Three : Double Checked Locking
+https://www.geeksforgeeks.org/singleton-design-pattern/
 
 kono class k final declare korle setar ar child class(oi class k kau extends korte pare na) create kora jai na but
 jodi class is not final then kivabe child class child class create kora protect kora jabe ?

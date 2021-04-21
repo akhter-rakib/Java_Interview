@@ -18,20 +18,20 @@ Method signature : Method signature is method name followed by argument type.
                 It gives more flexibility to programmer with the same name but different action.
 #AutoMetic promotion in Overloading :
      byte -> short -> int -> long -> float -> double
-     char -> -> int -> long -> float -> double
+     char ->  int -> long -> float -> double
 In overloading if exact method is not match then its argument promote to next level
 Example : In class I have two methods 1. m1(int a){...}; m1(long a){}
           But we call by m1('a'); then compiler will not give error . compiler promote the
           argument to "int" and call m1(int a){} method .
 practical example : 1. AutoPromoteInOverloading class
 
-#Pririty in method call : in overloading exact match will get highest priority but if parent
+#Priority in method call : in overloading exact match will get highest priority but if parent
  and child argument is present then child class get priority
  practical example : PriorityOfArgument
 
 # Overriding  : If the child is not satisfied with the implementation of parent implementation then if the child
   class goes for reimplementation base on their requirement then the concept it comes overriding . In the overriding concept everything
-  is same of the method I mean same name, same argument .
+  is same of the method I mean same name, same argument (Method signature must be same) .
 
  # Why Overriding called Runtime polymorphism :
    P p = new C();

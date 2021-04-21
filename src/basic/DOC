@@ -1,3 +1,8 @@
 # Different between instance method , static method
   Static method is class level no related to object. Instance method is object related method.
   -- Static is class level matter , Instance is object level matter
+
+# By default when childClass Object has been created then It's Parent class no-argument constructed
+  will be execute automatically because there is always a super(); method to call Parent Class no-argument
+  constructor in the childClass no-argument Constructor.
+  Example : SuperMethodDemo
