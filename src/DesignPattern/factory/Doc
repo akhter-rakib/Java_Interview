@@ -1,4 +1,19 @@
-Factory design pattern is used when we have a super class with multiple sub-classes and based on the
-requirement from client, we need to return one of the sub-class object. This pattern take out the responsibility of
-instantiation of a class from client program to the factory class.
-Super class in factory design pattern can be an interface, abstract class or a normal java class.
+Factory method, that means there is a method which is a factory, and in general factories are involved
+with creation  an object. It is one of the best ways to create an object where object creation logic is
+hidden to the client.
+Factory design pattern is used when we have a super class with multiple sub-classes and based on input,
+we need to return one of the sub-class object. This pattern take out the responsibility of instantiation
+of a class from client program to the factory class.
+Super class in factory design pattern can be an interface, abstract class or a normal java class. For
+our factory design pattern example, we have abstract super class with overridden toString() method for
+testing purpose.
+
+Real-time examples
+This design pattern has been widely used in JDK, such as
+1. getInstance() method of java.util.Calendar, NumberFormat, and ResourceBundle uses factory method
+design pattern.
+2. All the wrapper classes like Integer, Boolean etc, in Java uses this pattern to evaluate the values
+using valueOf() method.
+3. java.nio.charset.Charset.forName(), java.sql.DriverManager#getConnection(), java.net.URL.openConnection
+(), java.lang.Class.newInstance(), java.lang.Class.forName() are some of ther example where factory
+method design pattern has been used.
