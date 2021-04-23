@@ -1,0 +1,6 @@
+Serialization : The process of converting an object from java supported form to Either File supported form Or
+Network supported form is called Serialization
+ By using fileoutput Stream and ObjectOutStream classes we can achieve
+De Serialization : The process of converting an object from either file or network supported form into java supported
+form is called De Serialization .
+ By using fileInput Stream and ObjectInputStream Classes we can achieve.
