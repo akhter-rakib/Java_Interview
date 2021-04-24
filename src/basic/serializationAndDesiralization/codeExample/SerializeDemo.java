@@ -19,5 +19,7 @@ public class SerializeDemo {
         Animal dso = (Animal) ois.readObject();
 
         System.out.println("After De Serialize " + dso.a + " " + dso.b);
+        System.out.println("Usging Transient -> " + dso.c + " Using final  keyword -> "
+                + dso.d + " Static ->" + dso.e);
     }
 }

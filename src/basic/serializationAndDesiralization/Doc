@@ -11,3 +11,7 @@ Network supported form is called Serialization
 De Serialization : The process of converting an object from either file or network supported form into java supported
 form is called De Serialization .
  By using fileInput Stream and ObjectInputStream Classes we can achieve.
+
+
+ Transient access modifier : transient mean not to serialize
+ Final and static variable : There will be no effect if we want to use transient in this final and static variable

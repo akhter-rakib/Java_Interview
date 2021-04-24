@@ -6,3 +6,5 @@
   will be execute automatically because there is always a super(); method to call Parent Class no-argument
   constructor in the childClass no-argument Constructor.
   Example : SuperMethodDemo
+
+# Marker Interface :  The interface which has no method is called marker interface .
