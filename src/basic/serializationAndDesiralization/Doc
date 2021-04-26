@@ -16,5 +16,8 @@ form is called De Serialization .
  Transient access modifier : transient mean not to serialize
  Final and static variable : There will be no effect if we want to use transient in this final and static variable
 
- Anynumber of Serialization concept and how we De Serialization that : example : NumberOfSerialization and
+ Any number of Serialization concept and how we De Serialization that : example : NumberOfSerialization and
                                                                                  OrderOfSerialization pics
+Object Graph : Whenever we are going to serialize an object then the set of all object which is reachable from
+that object will be serialized automatically and it is the concept of object graph.
+Example : Object Graph , graph details, object graph design pics
