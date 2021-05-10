@@ -1,4 +1,4 @@
-package Polymorphism.CompileTimePolymorphism;
+package basic.OOP.Polymorphism.CompileTimePolymorphism;
 
 public class PriorityOfArgument {
     void m1(Object obj) {

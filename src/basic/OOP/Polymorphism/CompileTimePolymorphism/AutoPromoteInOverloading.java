@@ -1,4 +1,4 @@
-package Polymorphism.CompileTimePolymorphism;
+package basic.OOP.Polymorphism.CompileTimePolymorphism;
 
 public class AutoPromoteInOverloading {
     void m1(int a) {

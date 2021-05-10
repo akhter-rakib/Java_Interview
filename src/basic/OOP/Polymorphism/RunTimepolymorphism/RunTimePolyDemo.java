@@ -1,4 +1,4 @@
-package Polymorphism.RunTimepolymorphism;
+package basic.OOP.Polymorphism.RunTimepolymorphism;
 
 public class RunTimePolyDemo {
     public static void main(String[] args) {

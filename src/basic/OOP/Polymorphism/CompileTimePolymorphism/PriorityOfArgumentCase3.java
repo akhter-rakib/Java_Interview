@@ -1,4 +1,4 @@
-package Polymorphism.CompileTimePolymorphism;
+package basic.OOP.Polymorphism.CompileTimePolymorphism;
 
 public class PriorityOfArgumentCase3 {
     void m1(int a, float b) {

@@ -1,4 +1,4 @@
-package Polymorphism.RunTimepolymorphism;
+package basic.OOP.Polymorphism.RunTimepolymorphism;
 
 public class Dog implements Animal {
     @Override

@@ -1,4 +1,4 @@
-package Polymorphism.RunTimepolymorphism;
+package basic.OOP.Polymorphism.RunTimepolymorphism;
 
 public class Parent {
     public void property() {

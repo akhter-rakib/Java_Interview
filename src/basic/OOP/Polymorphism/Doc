@@ -26,8 +26,19 @@ Example : In class I have two methods 1. m1(int a){...}; m1(long a){}
 practical example : 1. AutoPromoteInOverloading class
 
 #Priority in method call : in overloading exact match will get highest priority but if parent
- and child argument is present then child class get priority
+ and child argument is present then child class get priority.
  practical example : PriorityOfArgument
+ But there is same level argument type then compile time error will be happened Example :
+ SameLevel Problem.png
+# Priority for depending on old vs new Version :
+  Example : OldVsNew.PNG
+  Code Example :VarArgument
+
+
+# Compiler resolution method base on ref type of Objec
+  Example : Compile call the method base on ref type.PNG
+  practice example : CompileTimeUseRefTypeMethodCallDemo
+
 
 # Overriding  : If the child is not satisfied with the implementation of parent implementation then if the child
   class goes for reimplementation base on their requirement then the concept it comes overriding . In the overriding concept everything
@@ -39,7 +50,7 @@ practical example : 1. AutoPromoteInOverloading class
 At compile time compile will check the eat() is available in the parent class. if it is not present
   then compiler will gives a error if it is present then  At run time jvm will check in this child class
   is overriding the method  or not. if it is Overriding then base on run time object child class method
-  will be called .the Overriding is also called run time polymorphism .
+  will be called so that Overriding is also called run time polymorphism .
 
 # Upcasting : If the reference variable of Parent class refers to the object of Child class, it is known as upcasting.
   For example: A a=new B();// Upcasting
@@ -47,7 +58,8 @@ At compile time compile will check the eat() is available in the parent class. i
 Rule Of overriding
 1. Method signature(method name , argument type) must be same
 2. return type must be same but it is applicable until 1.4 version but after that co-variant return type allow
-   co-variant - > co-variant type is the type which is child class of parent type
+   co-variant - > co-variant type is the type which is child class of parent type. and Co-variant return type
+   only applicable for Object type not primitive type.
                   Such as : String is co-variant type of Object Class
    practical example : CovariantReturnType
 
@@ -60,11 +72,17 @@ Rule Of overriding
   if p native to non native possible
   if p synchronization to non synchronization
 
-# We can reduce scope of access modifier but we can increase the scope
+# We can't reduce scope of access modifier but we can increase the scope
   public > protected > default > private
+
+# Why access can't be reduce ?
+  Because If we just extends a Parent class but is not yet overriding and this time 100 outside people
+  use that parent method. now if we decide to overridden that and reduce that access so that outside people
+  will get effected so that in overridden access can not be reduced.
 
 # If child class method throws any checked exception, then compulsory parent class should throw same
   checked exception or itself parent . In unchecked then no restriction.
+  Example : CheckedAndUnchecked.PNG
 
 # Class / Static level method can not be overriding  and also object level method is not possible in
   class level .
@@ -75,15 +93,24 @@ Rule Of overriding
   Example : OverHidingDemo
 
 # How we differentiate method overriding and method hiding .
-  In method overriding jvm call method base on run time object but if it is overloading then method
+  In method overriding jvm call method base on run time object but if it is method hiding then method
   resolution will be held base on reference type object.
   Example : DemoMethodHiding
-# var-argument : var-argument will not be overriding concept It will overloaded(compiler will
-  execute the reference type method).
-#Overriding with respect to variable :
-  Overriding concept applicable only for method not for variable
-  Variable resolution always takes care by compiler base on reference type.
 
+#Overriding with respect to variable :
+  Overriding concept applicable only for method not for variable .
+  Variable resolution always takes care by compiler base on reference type.
+  Example : overridden in variable.PNG
+
+# *** Difference Between Overloading vs Overriding
+      Example : OverloadingVsOverriding.jpeg
+** rulecheck in Overridding.PNG
+
+# Why Parent class reference need
+  Ans :
+
+#Pilar of OOPs
+ example : pilar of oops.PNG
 
 
 
