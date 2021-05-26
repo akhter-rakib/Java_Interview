@@ -35,7 +35,7 @@ practical example : 1. AutoPromoteInOverloading class
   Code Example :VarArgument
 
 
-# Compiler resolution method base on ref type of Objec
+# Compiler resolution method base on ref type of Object in overloading
   Example : Compile call the method base on ref type.PNG
   practice example : CompileTimeUseRefTypeMethodCallDemo
 
@@ -63,7 +63,7 @@ Rule Of overriding
                   Such as : String is co-variant type of Object Class
    practical example : CovariantReturnType
 
-#overriding concept not applicable for  private, final method.
+#overriding concept not applicable for  private,static  final method.
 # But in the case of final case
   if parent method is final so child method can not be overridden
   if parent method is non-final so child method can be overridden.
@@ -107,10 +107,11 @@ Rule Of overriding
 ** rulecheck in Overridding.PNG
 
 # Why Parent class reference need
-  Ans :
+  Ans : If we don't know about the rum time object then we can go for parent class object reference.
+
 
 #Pilar of OOPs
- example : pilar of oops.PNG
+ example : pilars of oops.PNG
 
 
 
