@@ -1,5 +1,5 @@
 Method signature : Method signature is method name followed by argument type.
-                   Compile use method signature while method are resolution.
+                   Compiler use method signature while method are resolution.
 #Polymorphism
  Here Poly   = many
      morphs = forms
